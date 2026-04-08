@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Music Table">
+  		<meta name="keywords" content="HTML, CSS">
+  		<meta name="author" content="Juraj Birovic">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style/style.css">		
+		<title>Music Database</title> <!--promijeniti odgovarajući tekst na stranici
+		ovo je samo predložak-->
+	</head>
+	<body>
+		<header>
+		<h1>Welcome to my Music page!</h1>
+		</header>
+		<header>
+       <nav aria-label="Glavna navigacija">
+			<ul class="nav-menu">
+				<li>
+				<a href="#">Navigacija ▼</a>
+				<ul class="dropdown">
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="/slike">Galerija</a></li>
+					<li><a href="grafikon.html">Grafikon</a></li>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+        </header>
+    
+		
+
+		
+	<div class="container">
+		<h1>Glazbeni Podaci</h1>
+		<table cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>artist</th>
+      <th>tags</th>
+      <th>year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mr. Brightside</td>
+      <td>The Killers</td>
+      <td>indie_rock</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>Wonderwall</td>
+      <td>Oasis</td>
+      <td>indie, pop</td>
+      <td>2006</td>
+    </tr>
+    <tr>
+      <td>Come as You Are</td>
+      <td>Nirvana</td>
+      <td>grunge</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <td>Take Me Out</td>
+      <td>Franz Ferdinand</td>
+      <td>britpop</td>
+      <td>2004</td>
+    </tr>
+    <tr>
+      <td>Creep</td>
+      <td>Radiohead</td>
+      <td>alternative</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td>Somebody Told Me</td>
+      <td>The Killers</td>
+      <td>indie_rock</td>
+      <td>2005</td>
+    </tr>
+    <tr>
+      <td>Viva la Vida</td>
+      <td>Coldplay</td>
+      <td>pop</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <td>Karma Police</td>
+      <td>Radiohead</td>
+      <td>alternative</td>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <td>The Scientist</td>
+      <td>Coldplay</td>
+      <td>pop</td>
+      <td>2007</td>
+    </tr>
+    <tr>
+      <td>Clocks</td>
+      <td>Coldplay</td>
+      <td>pop</td>
+      <td>2002</td>
+    </tr>
+  </tbody>
+</table>
+
+		<aside class="fotografije">
+  <div class="zoom-wrap">
+    <picture>
+      <source media="(min-width: 1000px)" srcset="music.jpg">
+      <source media="(min-width: 768px)" srcset="mobilemusic.jpg">
+      <img class="zoom-img" src="mobilemusic.jpg" alt="Glazba" loading="lazy">
+    </picture>
+  </div>
+</aside>
+	</div>
+
+		<section> <!-- dodati neke od obilježja za ARIA-->
+			<h2>Ovo je glavna sekcija</h2>
+			<p>HTML5 omogucava semanticku strukturu koja poboljsava pristupacnost i SEO.</p>
+		</section>
+		 <!-- dodati jedan aside na desnoj strani s ugrađenom google mapom/filmom ili slično-->
+		<article>
+			<h2>Najnovije vijesti</h2>
+			<p>Ovdje se nalazi clanak s vaznim informacijama.</p>
+		</article>
+		
+
+		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
+		Nepotrebno obrisati! -->
+		<footer>
+		<p>&copy; 2026. Web Programiranje. Sva prava pridrzana.</p>
+		</footer>
+	</body>
+	</html>
