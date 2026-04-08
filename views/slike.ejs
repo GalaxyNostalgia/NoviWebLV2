@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerija</title>
+  <link rel="stylesheet" href="/style/style_slike.css" />
+</head>
+<body>
+  <main>
+    <h1>Galerija slika</h1>
+
+    <section class="gallery" aria-label="Galerija slika">
+      <% images.forEach(image => { %>
+        <figure>
+          <a href="#<%= image.id %>">
+            <img src="<%= image.url %>" alt="<%= image.title %>" loading="lazy">
+          </a>
+          <figcaption><%= image.title %></figcaption>
+        </figure>
+
+        <!-- Lightbox overlay (anchor target) -->
+        <div class="lightbox" id="<%= image.id %>" aria-label="<%= image.title %>">
+          <a class="close" href="/slike" aria-label="Zatvori">×</a>
+          <img src="<%= image.url %>" alt="<%= image.title %>">
+        </div>
+      <% }) %>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vizualizacija Podataka - Pie Chart</title>
+  <link rel="stylesheet" href="style/style_graf.css" />
+</head>
+<body>
+  <header>
+    <h1>Vizualizacija Podataka - Pie Chart</h1>
+  </header>
+
+  <nav aria-label="Glavna navigacija">
+			<ul class="nav-menu">
+				<li>
+				<a href="#">Navigacija ▼</a>
+				<ul class="dropdown">
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="slike.html">Galerija</a></li>
+					<li><a href="grafikon.html">Grafikon</a></li>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+
+  <main>
+    <section class="chart-container" aria-label="Kružni grafikon">
+      <div class="pie-chart" role="img" aria-label="Grafikon udjela žanrova">
+        <div class="slice slice1" tabindex="0" data-label="Pop" data-value="60%"></div>
+        <div class="slice slice2" tabindex="0" data-label="Rock" data-value="25%"></div>
+        <div class="slice slice3" tabindex="0" data-label="Ostalo" data-value="15%"></div>
+      </div>
+
+      <ul class="legend" aria-label="Legenda grafikona">
+        <li><span class="color-box color1"></span> Pop <span class="sr-only">60 posto</span></li>
+        <li><span class="color-box color2"></span> Rock <span class="sr-only">25 posto</span></li>
+        <li><span class="color-box color3"></span> Ostalo <span class="sr-only">15 posto</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vizualizacija Podataka. Sva prava pridržana.</p>
+  </footer>
+</body>
+</html>
