@@ -1,2 +1,0 @@
-# GalaxyNostalgia.github.io
-Website
